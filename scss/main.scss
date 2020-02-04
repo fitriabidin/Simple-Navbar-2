@@ -1,0 +1,188 @@
+// Reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Styling
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// Outer Nav Section
+
+#outernav {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.3rem 0;
+
+    .logo span {
+      color: #fca311;
+    }
+
+    .information {
+      display: flex;
+      text-align: center;
+      align-items: center;
+
+      i {
+        color: #fca311;
+        margin-right: 0.4rem;
+      }
+      & > h3 {
+        padding: 0 2rem;
+        span {
+          font-size: 0.6rem;
+        }
+      }
+
+      a {
+        color: black;
+        margin-left: 2rem;
+        padding: 0.7rem 2.2rem;
+        border: 2px solid black;
+        &:hover {
+          background-color: #fca311;
+          color: white;
+          border: 2px solid transparent;
+        }
+      }
+    }
+  }
+}
+
+// Navbar Section
+
+#navbar {
+  background: black;
+  position: sticky;
+  top: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    .menu {
+      display: flex;
+
+      a {
+        padding: 0.6rem 1.4rem;
+        color: white;
+        &:hover {
+          background: #fca311;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .socials a {
+      color: white;
+      padding: 0 1.3rem;
+      &:hover {
+        color: #fca311;
+      }
+    }
+  }
+}
+
+// Showcase Section
+
+#showcase {
+  background: #14213d;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: white;
+
+    span {
+      color: #fca311;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+    color: white;
+
+    span {
+      color: #fca311;
+    }
+  }
+  h3 {
+    color: #fca311;
+  }
+}
+
+// Responsive Mode
+
+@media (max-width: 1000px) {
+  #outernav {
+    .container {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #outernav {
+    .container {
+      .information {
+        display: none;
+      }
+    }
+  }
+
+  #navbar {
+    .container {
+      justify-content: center;
+      .socials {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    .container {
+      .menu a {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  #showcase {
+    .container {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+}

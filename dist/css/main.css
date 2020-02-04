@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.6; }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+#outernav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1.3rem 0; }
+  #outernav .container .logo span {
+    color: #fca311; }
+  #outernav .container .information {
+    display: flex;
+    text-align: center;
+    align-items: center; }
+    #outernav .container .information i {
+      color: #fca311;
+      margin-right: 0.4rem; }
+    #outernav .container .information > h3 {
+      padding: 0 2rem; }
+      #outernav .container .information > h3 span {
+        font-size: 0.6rem; }
+    #outernav .container .information a {
+      color: black;
+      margin-left: 2rem;
+      padding: 0.7rem 2.2rem;
+      border: 2px solid black; }
+      #outernav .container .information a:hover {
+        background-color: #fca311;
+        color: white;
+        border: 2px solid transparent; }
+
+#navbar {
+  background: black;
+  position: sticky;
+  top: 0; }
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0; }
+    #navbar .container .menu {
+      display: flex; }
+      #navbar .container .menu a {
+        padding: 0.6rem 1.4rem;
+        color: white; }
+        #navbar .container .menu a:hover {
+          background: #fca311;
+          border-radius: 5px; }
+    #navbar .container .socials a {
+      color: white;
+      padding: 0 1.3rem; }
+      #navbar .container .socials a:hover {
+        color: #fca311; }
+
+#showcase {
+  background: #14213d;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  #showcase h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: white; }
+    #showcase h1 span {
+      color: #fca311; }
+  #showcase h2 {
+    font-size: 2rem;
+    color: white; }
+    #showcase h2 span {
+      color: #fca311; }
+
+@media (max-width: 1000px) {
+  #outernav .container {
+    flex-direction: column; } }
+
+@media (max-width: 768px) {
+  #outernav .container .information {
+    display: none; }
+  #navbar .container {
+    justify-content: center; }
+    #navbar .container .socials {
+      display: none; } }
+
+@media (max-height: 500px) {
+  #showcase .container {
+    margin-bottom: 10rem; } }
